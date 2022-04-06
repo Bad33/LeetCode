@@ -1,7 +1,7 @@
-class Solution(object):
-    def threeSumMulti(self, A, target):
+class Solution:
+    def threeSumMulti(self, arr: List[int], target: int) -> int:
         MOD = 10**9 + 7
-        count = collections.Counter(A)
+        count = collections.Counter(arr)
         keys = sorted(count)
 
         ans = 0
@@ -30,4 +30,5 @@ class Solution(object):
                     j += 1
                     k -= 1
 
-        return ans % MOD
+        return int(ans % MOD)
+        
