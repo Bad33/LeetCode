@@ -1,6 +1,6 @@
 class Solution:
     def lastStoneWeight(self, stones: List[int]) -> int:
-        for i in range(len(stones)):
+        while True:
             if len(stones) > 1:
                 r1 = max(stones)
                 stones.remove(r1)
